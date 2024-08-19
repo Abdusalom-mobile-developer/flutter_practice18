@@ -128,6 +128,7 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(
                       height: 35,
                     ),
+                    // Login Button
                     GestureDetector(
                       onTap: () {},
                       child: Container(
@@ -147,6 +148,7 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(
                       height: 25,
                     ),
+                    // Text between buttons
                     Text(
                       "Log in with SNS",
                       style: TextStyle(
@@ -157,6 +159,7 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(
                       height: 30,
                     ),
+                    // Facebook & Github Buttons Part
                     Padding(
                       padding: const EdgeInsets.only(
                         left: 20,
