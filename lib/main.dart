@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice18/pages/home_page.dart';
+import 'package:flutter_practice18/pages/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,9 +19,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: LoginPage(),
       routes: {
-        HomePage.id: (context) => HomePage(),
+        LoginPage.id: (context) => LoginPage(),
       },
     );
   }

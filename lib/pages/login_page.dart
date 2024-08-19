@@ -2,17 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class HomePage extends StatefulWidget {
-  static final String id = "home_page";
-  const HomePage({
+class LoginPage extends StatefulWidget {
+  static final String id = "login_page";
+  const LoginPage({
     super.key,
   });
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _LoginPageState extends State<LoginPage> {
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
   @override
@@ -58,13 +58,13 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(61),
-                      topRight: Radius.circular(61))),
+                      topLeft: Radius.circular(55),
+                      topRight: Radius.circular(55))),
               child: SingleChildScrollView(
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 80,
+                      height: 70,
                     ),
                     // Email and Password Part
                     Container(
