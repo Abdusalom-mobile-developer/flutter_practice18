@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class HomePage extends StatefulWidget {
   static final String id = "home_page";
@@ -37,7 +39,7 @@ class _HomePageState extends State<HomePage> {
                     height: 80,
                   ),
                   Text(
-                    "Log In",
+                    "Login",
                     style: TextStyle(color: Colors.white, fontSize: 38),
                   ),
                   SizedBox(
@@ -64,9 +66,10 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       height: 80,
                     ),
+                    // Email and Password Part
                     Container(
                       padding: EdgeInsets.only(left: 22, right: 22),
-                      height: 130,
+                      height: 147,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           boxShadow: [
@@ -82,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           // Email TextField
                           Container(
-                            height: 60,
+                            height: 70,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(15),
@@ -101,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           // Password TextField
                           Container(
-                            height: 60,
+                            height: 70,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                     bottomLeft: Radius.circular(16),
@@ -117,6 +120,89 @@ class _HomePageState extends State<HomePage> {
                                   hintText: "Password",
                                   border: OutlineInputBorder(
                                       borderSide: BorderSide.none)),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 35,
+                    ),
+                    GestureDetector(
+                      onTap: () {},
+                      child: Container(
+                        margin: EdgeInsets.only(left: 70, right: 70),
+                        width: double.infinity,
+                        height: 50,
+                        decoration: BoxDecoration(
+                            color: Colors.green[900],
+                            borderRadius: BorderRadius.circular(51)),
+                        child: Center(
+                            child: Text(
+                          "Log in",
+                          style: TextStyle(fontSize: 16, color: Colors.white),
+                        )),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    Text(
+                      "Log in with SNS",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 20,
+                        right: 20,
+                      ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: GestureDetector(
+                              onTap: () {},
+                              child: Container(
+                                height: 50,
+                                decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(50)),
+                                child: Center(
+                                  child: Text("Facebook",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      )),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          Expanded(
+                            child: GestureDetector(
+                              onTap: () {},
+                              child: Container(
+                                height: 50,
+                                decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(50)),
+                                child: Center(
+                                  child: Text("Github",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      )),
+                                ),
+                              ),
                             ),
                           )
                         ],
